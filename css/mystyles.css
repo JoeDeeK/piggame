@@ -1,0 +1,112 @@
+
+body {
+    background-image: url(https://wallpapercave.com/wp/qQjp5w3.jpg);
+    background-size: 200%;
+    background-position: center;
+    position: relative; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-0, .player-1 {
+    width: 30%;
+    background-color:cornsilk;
+    float: left;
+    text-align: center;
+    height: 500px;
+    padding: 10px;
+    margin-top: 5em;
+}
+
+.dice {
+    position:absolute;
+    height: 10em;
+    width: 10em;
+    background-color: white;
+    border-radius: 1.2em;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.5);
+    top: 280;
+    margin-top: 4em;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover { font-weight: bold; }
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: darkgoldenrod;
+    margin-right: .3em;
+}
+
+.btn-new { top: 140px;}
+.btn-roll { top: 470px;}
+.btn-hold { top: 517px;}
+
+.player-name {
+    margin-top: 2em;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.player-score {
+    font-size: 80px;
+    color: darkorange;
+}
+
+.active { background-color:bisque; }
+.active .player-name { font-weight: 700; }
+
+
+.player-current-container {
+    background-color: orange;
+    padding: 1em;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 9em;
+    color: white;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.player-current-score {
+    font-size: 2em;
+}
+
+.winner .player-name { 
+    font-weight: 700; 
+    color: darkgoldenrod; 
+}
+
+#btn-rules {
+    margin-top: 2em;
+    padding: .5em;
+    background-color: beige;
+}
